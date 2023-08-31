@@ -1,0 +1,221 @@
+body{
+    background-color: #DEE2D9;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-top: 2px solid black;
+    justify-content: flex-end;
+    border-bottom: 2px solid black;
+    background-color: #BEC7B4;
+}
+
+.container div{
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color:whitesmoke;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: #8DA290;
+    margin: 10px 0;
+}
+
+.logo{
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5px;
+}
+
+.home{
+    border-top-left-radius: 15%;
+    border-bottom-left-radius: 15%;
+}
+
+.message{
+    border-top-right-radius: 15%;
+    border-bottom-right-radius: 15%;
+}
+
+.myheader{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.myslides {
+    display: none;
+ }
+ 
+ .mydiv {
+    position: relative;
+    margin: 0 auto;
+    max-width: fit-content;
+    max-height: fit-content;
+ }
+
+ button{
+  opacity: 60%;
+ }
+
+ .leftbutton{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    background-color: black;
+    border: none;
+    color: white;
+    width: 40px;
+    height: 70px;
+ }
+
+ .rightbutton{
+    position: absolute;
+    top: 40%;
+    right: 0;
+    background-color: black;
+    border: none;
+    color: white;
+    width: 40px;
+    height: 70px;
+ }
+
+ article{
+    margin: 20px 15px;
+    text-align: justify;
+ }
+
+ li{
+    margin-bottom: 20px;
+ }
+
+ .myfacility{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+ }
+
+ .circle-container{
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+ }
+
+ figcaption{
+    text-align: center;
+ }
+
+ .content{
+    flex-direction: row; display: flex;
+}
+#konten1{
+    display: flex; 
+    flex: 1; 
+    align-content: center; 
+    justify-content: center;
+}
+#konten2{
+    display: flex; 
+    flex-direction: column;
+    flex: 1; 
+    align-content: center; 
+    justify-content: center;
+    border: 1px solid black;
+}
+
+#nyoba1{
+    display: flex; 
+    flex: 1; 
+    align-content: center; 
+    justify-content: center;
+}
+
+#nyoba2{
+    display: flex; 
+    flex: 2; 
+    align-content: start; 
+    justify-content: start;
+}
+
+.nyoba{
+    flex-direction: row; display: flex;
+}
+
+.input-container {
+     display: flex;
+     flex-direction: column;    
+     align-items: flex-start;
+     gap: 5px;
+    }
+
+.input-container label {
+    order: 1;
+}
+
+.input-container textarea {
+    order: 2;
+}
+
+#submit{
+    width: 100%;
+}
+
+footer{
+    text-align: right;
+}
+
+.keatas{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    
+}
+
+@media only screen and (max-width: 600px){
+    .container{
+        flex-direction: column;
+    }
+    .home{
+        border-radius: 0%;
+    }
+    .message{
+        border-radius: 0%;
+    }
+    .logo{
+        margin-left: auto;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .nyoba{
+        margin-bottom: 20px;
+    }
+    .myfacility{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .circle-container{
+        margin: 0 -15px;
+    }
+    .mydiv{
+        width: 200px;
+    }
+    figcaption{
+        text-align: left;
+    }
+}
